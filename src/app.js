@@ -9,31 +9,31 @@ window.onload = function() {
   //write your code here
   console.log("Hello Rigo from the console!");
   const excusaElement = document.getElementById("excusa");
-  let who = ["The dog", "My grandma", "The mailman", "My bird"];
-  let action = ["ate", "peed", "crushed", "broke"];
-  let what = ["my homework", "my phone", "the car"];
-  let when = [
-    "before the class",
-    "when I was sleeping",
-    "while I was exercising",
-    "during my lunch",
-    "while I was praying"
+  const quien = ["El perro", "Mi abuela", "El cartero", "Mi mascota"];
+  const accion = ["comio", "mojo", "aplasto", "rompio"];
+  const objeto = ["mi tarea", "mi telefono", "el carro"];
+  const cuando = [
+    "antes de clases",
+    "cuando yo estaba durmiendo",
+    "mientras estaba haciendo ejercicio",
+    "durante el almuerzo",
+    "mientras estaba rezando"
   ];
 
   function GenerandoExcusas() {
-    let randomWho = who[Math.floor(Math.random() * who.length)];
-    let randomAction = action[Math.floor(Math.random() * action.length)];
-    let randomWhat = what[Math.floor(Math.random() * what.length)];
-    let randomWhen = when[Math.floor(Math.random() * when.length)];
+    const aleatorioQuien = quien[Math.floor(Math.random() * quien.length)];
+    const aleatorioAccion = accion[Math.floor(Math.random() * accion.length)];
+    const aleatorioObjeto = objeto[Math.floor(Math.random() * objeto.length)];
+    const aleatorioCuando = cuando[Math.floor(Math.random() * cuando.length)];
 
-    let excusa =
-      randomWho +
+    const excusa =
+      aleatorioQuien +
       " " +
-      randomAction +
+      aleatorioAccion +
       " " +
-      randomWhat +
+      aleatorioObjeto +
       " " +
-      randomWhen +
+      aleatorioCuando +
       ".";
     return excusa;
   }
